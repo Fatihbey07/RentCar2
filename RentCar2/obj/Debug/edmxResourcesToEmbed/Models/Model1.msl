@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities1">
+    <EntitySetMapping Name="Araba">
+      <EntityTypeMapping TypeName="DBModel.Araba">
+        <MappingFragment StoreEntitySet="Araba">
+          <ScalarProperty Name="arabaId" ColumnName="arabaId" />
+          <ScalarProperty Name="arabaadi" ColumnName="arabaadi" />
+          <ScalarProperty Name="arabakategori" ColumnName="arabakategori" />
+          <ScalarProperty Name="kiralikdurum" ColumnName="kiralikdurum" />
+          <ScalarProperty Name="vites" ColumnName="vites" />
+          <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+          <ScalarProperty Name="arabaModel" ColumnName="arabaModel" />
+          <ScalarProperty Name="kirUcret" ColumnName="kirUcret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="DBModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+          <ScalarProperty Name="kategoriAdi" ColumnName="kategoriAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KiraKayit">
+      <EntityTypeMapping TypeName="DBModel.KiraKayit">
+        <MappingFragment StoreEntitySet="KiraKayit">
+          <ScalarProperty Name="kiraKayitId" ColumnName="kiraKayitId" />
+          <ScalarProperty Name="kimKiraladi" ColumnName="kimKiraladi" />
+          <ScalarProperty Name="kimeKiraladi" ColumnName="kimeKiraladi" />
+          <ScalarProperty Name="kirTarih" ColumnName="kirTarih" />
+          <ScalarProperty Name="iadeTarih" ColumnName="iadeTarih" />
+          <ScalarProperty Name="kirArabaId" ColumnName="kirArabaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uye">
+      <EntityTypeMapping TypeName="DBModel.Uye">
+        <MappingFragment StoreEntitySet="Uye">
+          <ScalarProperty Name="uyeId" ColumnName="uyeId" />
+          <ScalarProperty Name="adsoyad" ColumnName="adsoyad" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="parola" ColumnName="parola" />
+          <ScalarProperty Name="admin" ColumnName="admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
